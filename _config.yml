@@ -1,0 +1,21 @@
+title: Brodi
+description: Contactgegevens van Brodi
+lang: nl
+baseurl: ""
+url: "https://dvdbr.github.io"
+
+contact:
+  address:
+    - Utrecht
+    - Nederland
+  phone: "+31 (0)20 123 4567"
+  email: info@fake.com
+  website: www.brodi.nl
+  website_url: https://www.brodi.nl
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .idea/
+  - vendor/

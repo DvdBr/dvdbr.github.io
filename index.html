@@ -1,65 +1,16 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Brodi</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            background: linear-gradient(to bottom, #1e90ff, #87ceeb, #e6f2ff);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #333;
-        }
-        .container {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            width: 90%;
-            text-align: center;
-        }
-        h1 {
-            color: #1e90ff;
-            margin-bottom: 20px;
-        }
-        .contact-info {
-            margin: 20px 0;
-            text-align: left;
-        }
-        .contact-info p {
-            margin: 10px 0;
-        }
-        a {
-            color: #1e90ff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Contactgegevens Brodi</h1>
-        <div class="contact-info">
-            <p><strong>Adres:</strong><br>
-            Voorbeeldstraat 123<br>
-            1234 AB, Amsterdam<br>
-            Nederland</p>
-            <p><strong>Telefoon:</strong><br>
-            +31 (0)20 123 4567</p>
-            <p><strong>E-mail:</strong><br>
-            <a href="mailto:">info@fake.com</a></p>
-            <p><strong>Website:</strong><br>
-            <a href="https://www.fake.com" target="_blank">www.fake.com</a></p>
-        </div>
-    </div>
-</body>
-</html>
+---
+layout: hacker
+title: Contact
+---
+<h1>{{ site.title }}</h1>
+<div class="contact-info">
+    <p><strong>Adres:</strong><br>
+    {% for line in site.contact.address %}{{ line }}{% unless forloop.last %}<br>
+    {% endunless %}{% endfor %}</p>
+    <p><strong>Telefoon:</strong><br>
+    {{ site.contact.phone }}</p>
+    <p><strong>E-mail:</strong><br>
+    <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+    <p><strong>Website:</strong><br>
+    <a href="{{ site.contact.website_url }}" target="_blank">{{ site.contact.website }}</a></p>
+</div>
