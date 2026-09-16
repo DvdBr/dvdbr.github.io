@@ -4,6 +4,18 @@ lang: nl
 baseurl: ""
 url: "https://dvdbr.github.io"
 
+theme: jekyll-theme-hacker
+plugins:
+  - jekyll-seo-tag
+
+# Hacker theme options
+show_downloads: false
+
+# The theme header links to site.github.repository_url, which only GitHub's own
+# build populates. Set it here so the link also works on a local build.
+github:
+  repository_url: https://github.com/DvdBr/dvdbr.github.io
+
 contact:
   address:
     - Utrecht
