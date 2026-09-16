@@ -25,6 +25,7 @@ contact:
   website_url: https://www.brodi.nl
   kvknr: 67718701
   btwnr: NL001900118B14
+  linkedin: https://www.linkedin.com/in/dickvandenbroek-brodi/
 
 exclude:
   - Gemfile
