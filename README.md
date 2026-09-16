@@ -1,2 +1,1 @@
-# dvdbr.github.io
-Dibr Webpage
+This repo contains the brodi.nl placeholder site.
