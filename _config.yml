@@ -1,6 +1,6 @@
 title: Brodi
-description: Contactgegevens van Brodi
-lang: nl
+description: Integration Consultant specialised in Message-Oriented Middleware. Tying applications together is my game. 'Manageable' tying only of course :) , with some 'architectual overview'. Avoid the spagetti!
+lang: en
 baseurl: ""
 url: "https://dvdbr.github.io"
 
@@ -20,8 +20,7 @@ contact:
   address:
     - Utrecht
     - Nederland
-  phone: "+31 (0)20 123 4567"
-  email: info@fake.com
+  email: no do not need more spam
   website: www.brodi.nl
   website_url: https://www.brodi.nl
 
