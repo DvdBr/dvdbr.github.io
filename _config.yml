@@ -23,6 +23,8 @@ contact:
   email: no do not need more spam
   website: www.brodi.nl
   website_url: https://www.brodi.nl
+  kvknr: 67718701
+  btwnr: NL001900118B14
 
 exclude:
   - Gemfile

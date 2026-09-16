@@ -6,7 +6,12 @@ title: Contact
     <p><strong>Located in:</strong><br>
     {% for line in site.contact.address %}{{ line }}{% unless forloop.last %}<br>
     {% endunless %}{% endfor %}</p>
-    <p><strong>E-mail:</strong><br> {{ site.contact.email }}</p>
+    <p><strong>E-mail:</strong><br>
+        {{ site.contact.email }}</p>
+    <p><strong>Kamer van Koophandel:</strong><br>
+        {{ site.contact.kvknr }}</p>
+    <p><strong>BTW-ID:</strong><br>
+        {{ site.contact.btwnr }}</p>
     <p><strong>Website:</strong><br>
     <a href="{{ site.contact.website_url }}" target="_blank">{{ site.contact.website }}</a></p>
 </div>
